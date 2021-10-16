@@ -33,28 +33,29 @@
         <section>
             <h2>Formulario sobre Alan Kay</h2>
             <form name="formulario">
-                <label>¿Cuánto pagarías (€) por ir a una charla suya?<br></label>
+                <label for="num">¿Cuánto pagarías (€) por ir a una charla suya?<br></label>
                     <input type="number"
-                            min="0"
-                            alt="introduce número">
-                <label><br>Cita favorita<br></label>
+                            min="0" 
+                            id="num">
+                <label for="txt"><br>Cita favorita<br></label>
                     <input type="text" 
-                            alt="introduce texto">
+                            id="txt">
                 <label><br>¿Qué trabajos suyos conoces?</label><br>
-                    <input type="checkbox" value="primero"
-                            alt="check 1">Desarrollo de Squeak<br>
-                    <input type="checkbox"
-                        value="segundo"
-                        alt="check 2">Desarrollo de Croquet<br>
-                    <input type="checkbox"
-                        value="tercer"
-                        alt="check 3">Proyecto del Portátil de 100 dólares<br>
-                <label>Opinión personal: <br></label>
+                    
+                    <input type="checkbox" value="primero" id="ch1"/>
+                        <label for="ch1">Desarrollo de Squeak<br></label>
+                    <input type="checkbox"  value="segundo" id="ch2"/>
+                        <label for="ch1">Desarrollo de Croquet<br></label>
+                    <input type="checkbox" value="tercer" id="ch3"/>
+                        <label for="ch1">Proyecto del Portátil de 100 dólares<br></label>
+
+
+                <label for="txta">Opinión personal: <br></label>
                     <textarea cols="15" rows="6" 
-                    alt="area de texto"></textarea>
+                        id="txta"></textarea>
                 <input type="button"
                     value="Mandar formulario"
-                    alt="botón enviar">
+                    id="bt">
             </form>
         </section>
     </main>
