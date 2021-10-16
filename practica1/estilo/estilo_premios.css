@@ -1,0 +1,14 @@
+/*Especificidad: 001*/
+table{
+  color: rgb(255, 255, 255);    
+  background-color:rgb(88, 2, 52); 
+  text-align: left;   
+  width: 80%;
+  border: 3px solid #000;
+}
+/*Especificidad: 001*/
+th, td {
+  width: 50%;
+  text-align: left;
+  border: 3px solid #000;
+}

@@ -1,0 +1,9 @@
+/*Especificidad: 001*/
+ol{
+  list-style-type:disc;
+  color: #fff;    
+  background-color:rgb(4, 2, 36); 
+  text-align: left;   
+  width: 30%;
+  margin: 2%;
+  }

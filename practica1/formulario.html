@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sergio Castillo García" />
+    <meta name="description" content="Página web con un formulario sobre Alan Kay" />
+    <meta name="keywords" content="alan kay,software,estándares,web,sergio castillo,formulario, opinión">
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <title>Formulario sobre Alan Key</title>
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/estilo_formulario.css" />
+</head>
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header><h1>Alan Kay</h1></header>
+    <nav>
+        <a title="Enlace a la página principal"
+        tabindex="1"
+        accesskey="I"
+        href= "index.html">Índice</a>
+        <a title="Enlace a las citas de Alan Kay"
+        tabindex="2"
+        accesskey="C"
+        href= "citas.html">Citas</a>
+        <a title="Enlace a los premios de Alan Kay"
+        tabindex="3"
+        accesskey="P"
+        href= "premios.html">Premios    </a>
+    </nav>
+    <main>
+        <section>
+            <h2>Formulario sobre Alan Kay</h2>
+            <form name="formulario">
+                <label>¿Cuánto pagarías (€) por ir a una charla suya?<br></label>
+                    <input type="number"
+                            min="0">
+                <label><br>Cita favorita<br></label>
+                    <input type="text" >
+                <label><br>¿Qué trabajos suyos conoces?</label><br>
+                    <input type="checkbox" value="primero"
+                        checked>Desarrollo de Squeak<br>
+                    <input type="checkbox"
+                        value="segundo">Desarrollo de Croquet<br>
+                    <input type="checkbox"
+                        value="tercer">Proyecto del Portátil de 100 dólares<br>
+                <label>Opinión personal: <br></label>
+                    <textarea cols="15" rows="6" ></textarea>
+                <input type="button"
+                    value="Mandar formulario">
+            </form>
+        </section>
+    </main>
+    <aside>
+        <img src="multimedia/alan_kay.jpg" alt="Alan Kay!"/>
+    </aside>
+    <footer>
+        <p>Esta página forma parte del trabajo práctico de la asignatura Software y Estándares para la Web</p>
+    </footer>
+</body>
+</html>
