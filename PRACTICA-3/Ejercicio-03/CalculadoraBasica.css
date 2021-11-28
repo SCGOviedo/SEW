@@ -12,17 +12,13 @@ body  {
   width: 30%;
  }
  /*Especificidad: 011*/
- label:first-child {
+ input:first-child {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row: 1;
   color:white;
   background-color: rgb(44, 44, 44);
  }
-  /*Especificidad: 011*/
-  input:first-child {
-    width: 99%;
-   }
   /*Especificidad: 002*/
   form input{
     color:white;
