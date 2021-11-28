@@ -26,3 +26,9 @@ p {
    color:white;
    background-color: rgb(39, 39, 39);
  }
+ /*Especificidad: 001*/
+ label{
+   color:white;
+   background-color: rgb(39, 39, 39);
+
+ }
