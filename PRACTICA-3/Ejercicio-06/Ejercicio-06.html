@@ -16,8 +16,9 @@
 
 <body onKeyUp="calculadora.teclas(event)">
     <h1>Calculadora RPN, Cambio de base</h1>
+    <label for="pantalla">Por Sergio Castillo </label>
     <form onclick="calculadora.mostrarEspecialidad()">
-        <textarea disabled></textarea>
+        <textarea disabled id="pantalla" >0</textarea>
 
 
         <input type="button" value="x₂" onClick="calculadora.bas2()" />
