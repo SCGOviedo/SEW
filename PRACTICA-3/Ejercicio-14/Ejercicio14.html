@@ -18,14 +18,14 @@
   <h1>Ejercicio 14</h1>
   <form>
     <input type="button" value="Pantalla completa" onClick="objeto.pantallaCompleta()" />
-    <input type="submit" value="-" onClick="objeto.tam(-5)" />
-    <input type="submit" value="+" onClick="objeto.tam(5)" />
-    <input type="submit" value="Negro" onClick="objeto.cambiarColor('#000')" />
-    <input type="submit" value="Azul" onClick="objeto.cambiarColor('#00008B')" />
-    <input type="submit" value="Verde" onClick="objeto.cambiarColor('#006400')" />
-    <input type="submit" value="Rojo" onClick="objeto.cambiarColor('#8B0000')" />
-    <input type="submit" value="Amarillo" onClick="objeto.cambiarColor('#FFFF00')" />
-    <input type="submit" value="Rosa" onClick="objeto.cambiarColor('#EE82EE')" />
+    <input type="button" value="-" onClick="objeto.tam(-5)" />
+    <input type="button" value="+" onClick="objeto.tam(5)" />
+    <input type="button" value="Negro" onClick="objeto.cambiarColor('#000')" />
+    <input type="button" value="Azul" onClick="objeto.cambiarColor('#00008B')" />
+    <input type="button" value="Verde" onClick="objeto.cambiarColor('#006400')" />
+    <input type="button" value="Rojo" onClick="objeto.cambiarColor('#8B0000')" />
+    <input type="button" value="Amarillo" onClick="objeto.cambiarColor('#FFFF00')" />
+    <input type="button" value="Rosa" onClick="objeto.cambiarColor('#EE82EE')" />
   </form>
   <section>
     <h2>Escriba el código hexadecimal de un color y pulse enter</h2>
@@ -33,7 +33,7 @@
     <input type="text" value="" onchange="objeto.cambiarColor()" id="campo" />
   </section>
   <main>
-    <canvas width="1920" height="1080" onclick="objeto.dibuja()"></canvas>
+    <canvas width="1920" height="1080" onclick="objeto.dibuja()" onkeydown="objeto.dibuja()"></canvas>
   </main>
 
 
