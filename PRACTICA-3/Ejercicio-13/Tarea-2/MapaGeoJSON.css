@@ -33,3 +33,9 @@ p {
     margin-left: 10%;
     background-color: rgb(34, 34, 34);
  }
+ /*Especificidad: 001*/
+ label{
+    font-size: 200%;
+    color: #fff;    
+    background-color: rgb(34, 34, 34);
+ }
