@@ -1,0 +1,9 @@
+Api Google Maps
+Api Commodities
+
+HTML y CSS validado, pero al mirar TAW fijo que he de cambiar cosas :(
+Adaptabilidad y accesibilidad
+
+parentesis , más o menos va
+
+RPN bitácora

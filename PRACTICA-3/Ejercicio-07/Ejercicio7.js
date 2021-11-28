@@ -38,7 +38,7 @@ class Objeto {
     }
     sumarFilas() {
         var fila = $("table tr");
-        for (var i = 0; i < fila.length; i++) {
+        for (var i = 1; i < fila.length; i++) {
             var sum = 0;
             var columna = $("td", fila[i]);
             for (var j = 0; j < columna.length; j++) {
@@ -49,7 +49,7 @@ class Objeto {
     }
     sumarColumnas() {
         var columna = $("table tr");
-        for (var i = 0; i < columna.length; i++) {
+        for (var i = 0; i < columna.length-1; i++) {
             var sum = 0;
             var fila = $("table tr");
             for (var j = 0; j < fila.length; j++) {
