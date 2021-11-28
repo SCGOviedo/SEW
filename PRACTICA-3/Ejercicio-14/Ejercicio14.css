@@ -40,7 +40,7 @@ h2 {
  form
  {
   display: grid;
-  grid-template-columns:  repeat(9, 1fr);
+  grid-template-columns:  repeat(5, 1fr);
  }/*Especificidad: 011*/
  input:first-child{
   grid-column:1 ;
