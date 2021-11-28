@@ -1,0 +1,3 @@
+pila infinita, si se pasa, scroll
+Solo operaciones basicas +-/* y sin, cos, tan, arccos...
+No eval

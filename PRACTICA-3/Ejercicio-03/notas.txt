@@ -1,0 +1,5 @@
+m+ coje lo que hay en memoria y le suma la pantalla, guarda el resultado en la memoria
+m- lo mismo pero resta
+mrc pone en pantalla (muestra) la memoria
+
+gridmyexmaple.com
