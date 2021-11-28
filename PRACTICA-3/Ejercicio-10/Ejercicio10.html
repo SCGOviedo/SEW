@@ -15,6 +15,7 @@
     <script src="Ejercicio10.js"></script>
 </head>
 
+
 <body onload="objeto.cargarDatos()">
     <section>
         <h1>
@@ -23,9 +24,9 @@
     </section>
     <section>
         <h2>Conversor</h2>
-        <p>Euros: <input type="text" onchange="objeto.actualizarEuros()" /></p>
-        <p>Litros: <input type="text" onchange="objeto.actualizarLitros()" /></p>
-        <p>Barriles: <input type="text" onchange="objeto.actualizarBarriles()" /></p>
+        <label for="euros">Euros: </label><input type="text" onchange="objeto.actualizarEuros()" id="euros"/>
+        <label for="litros">Litros: </label><input type="text" onchange="objeto.actualizarLitros()" id="litros"/>
+        <label for="barriles">Barriles: </label><input type="text" onchange="objeto.actualizarBarriles()" id="barriles"/>
     </section>
 </body>
 
