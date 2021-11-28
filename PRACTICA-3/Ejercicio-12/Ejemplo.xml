@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DOCTYPE personas SYSTEM "personas.dtd"--> 
+<personas xmlns="http://www.uniovi.es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.uniovi.es personas.xsd"> 
+	<persona nombre="Sergio" apellidos="Castillo García"> 
+    <datos fecha_nacimiento="2001-08-16" lugar_nacimiento="León">
+		<comentario>Yo</comentario>
+		<coordenadas_nacimiento longitud="-5.5696" latitud="42.6000" altitud="800"> </coordenadas_nacimiento> 
+		<foto>yo.jpg</foto> 
+		<video>yo.mp4</video>
+	</datos>
+    <persona nombre="Encarna" apellidos="García del Río"> 
+        <datos fecha_nacimiento="1964-10-09" lugar_nacimiento="León">
+			<comentario>Mi madre</comentario>
+			<coordenadas_nacimiento longitud="-5.5784" latitud="42.6003" altitud="586456"> </coordenadas_nacimiento>
+			<foto>mama.jpg</foto> 
+		</datos>
+		<persona nombre="Mari" apellidos="García del Río">
+			<datos fecha_nacimiento="1935-05-02" lugar_nacimiento="León">
+				<comentario>Mi abuela materna</comentario>	
+				<coordenadas_nacimiento longitud="-5.5684" latitud="42.6110" altitud="586456"> </coordenadas_nacimiento> 
+				<foto>mari.jpg</foto> 
+			</datos>
+			<persona nombre="Paqui" apellidos="Serena del García">	
+				<datos fecha_nacimiento="1904-10-09" lugar_nacimiento="León"  fecha_fallecimiento="1994-10-09" lugar_fallecimiento="León">
+					<comentario>Mi bisabuela materna</comentario>	
+					<coordenadas_nacimiento longitud="-5.5700" latitud="42.5803" altitud="586456"> </coordenadas_nacimiento> 
+					<coordenadas_fallecimiento longitud="-5.5584" latitud="42.5603" altitud="964333"> </coordenadas_fallecimiento> 
+					<foto>mamamari.jpg</foto> 
+				</datos>
+			</persona>
+			<persona nombre="Pepe" apellidos="García Morán">
+				<datos fecha_nacimiento="1904-10-09" lugar_nacimiento="León"  fecha_fallecimiento="1994-10-09" lugar_fallecimiento="León">
+					<comentario>Mi bisabuelo materno</comentario>	
+					<coordenadas_nacimiento longitud="-5.510" latitud="42.6003" altitud="586456"> </coordenadas_nacimiento> 
+					<coordenadas_fallecimiento longitud="-5.500" latitud="42.6053" altitud="964333"> </coordenadas_fallecimiento> 		
+					<foto>papamari.jpg</foto> 			
+				</datos>
+			</persona>
+		</persona> 
+		<persona nombre="Antonio" apellidos="García Morán">
+			<datos fecha_nacimiento="1935-05-02" lugar_nacimiento="Los Barrios de Luna" fecha_fallecimiento="2018-05-02" lugar_fallecimiento="Los Barrios de Luna">
+				<comentario>Mi abuelo materno</comentario>	
+				<coordenadas_nacimiento longitud="-5.8613" latitud="42.8430" altitud="586456"> </coordenadas_nacimiento> 
+				<coordenadas_fallecimiento longitud="-5.7013" latitud="42.8030" altitud="964333"> </coordenadas_fallecimiento> 	
+				<foto>antonio.jpg</foto> 			
+			</datos>
+			<persona nombre="Rosa" apellidos="Serena del García">
+				<datos fecha_nacimiento="1904-10-09" lugar_nacimiento="Los Barrios de Luna"  fecha_fallecimiento="1904-10-09" lugar_fallecimiento="Los Barrios de Luna">
+					<comentario>Mi bisabuela materna</comentario>	
+					<coordenadas_nacimiento longitud="-5.8613" latitud="42.8030" altitud="586456"> </coordenadas_nacimiento> 
+					<coordenadas_fallecimiento longitud="-5.5313" latitud="42.8430" altitud="964333"> </coordenadas_fallecimiento> 
+					<foto>mamaantonio.jpg</foto> 			
+				</datos>
+			</persona>
+			<persona nombre="Luis" apellidos="García Morán">
+				<datos fecha_nacimiento="1904-10-09" lugar_nacimiento="Los Barrios de Luna"  fecha_fallecimiento="1904-10-09" lugar_fallecimiento="Los Barrios de Luna">
+					<comentario>Mi bisabuelo materno</comentario>	
+					<coordenadas_nacimiento longitud="-5.9613" latitud="42.8830" altitud="586456"> </coordenadas_nacimiento> 
+					<coordenadas_fallecimiento longitud="-5.5813" latitud="42.8430" altitud="964333"> </coordenadas_fallecimiento> 
+					<foto>papaantonio.jpg</foto> 	
+				</datos>
+			</persona>
+		</persona>
+    </persona> 
+    <persona nombre="Carlos" apellidos="Castillo Serena" >
+        <datos fecha_nacimiento="1964-10-09" lugar_nacimiento="Besanzón">
+			<comentario>Mi padre</comentario>	
+			<coordenadas_nacimiento longitud="6.0236" latitud="47.2379" altitud="586456"> </coordenadas_nacimiento> 
+			<foto>papa.jpg</foto> 	
+		</datos>
+		<persona nombre="Pili" apellidos="Serena del Río">
+			<datos fecha_nacimiento="1924-10-09" lugar_nacimiento="Guadalajara"  fecha_fallecimiento="1994-10-09" lugar_fallecimiento="Guadalajara">
+				<comentario>Mi abuela paterna</comentario>	
+				<coordenadas_nacimiento longitud="-3.1718" latitud="40.6145" altitud="586456"> </coordenadas_nacimiento> 
+				<coordenadas_fallecimiento longitud="-3.1618" latitud="40.6445" altitud="964333"> </coordenadas_fallecimiento> 
+				<foto>pili.jpg</foto> 	
+			</datos>
+			<persona nombre="Josefina" apellidos="Serena del García">
+				<datos fecha_nacimiento="1904-10-09" lugar_nacimiento="Guadalajara"  fecha_fallecimiento="1984-10-09" lugar_fallecimiento="Guadalajara">
+					<comentario>Mi bisabuela paterna</comentario>	
+					<coordenadas_nacimiento longitud="-3.1518" latitud="40.6245" altitud="586456"> </coordenadas_nacimiento> 
+					<coordenadas_fallecimiento longitud="-3.1618" latitud="40.6345" altitud="964333"> </coordenadas_fallecimiento> 
+					<foto>mamapili.jpg</foto> 	
+				</datos>
+			</persona>
+			<persona nombre="Paco" apellidos="García Morán">
+				<datos fecha_nacimiento="1924-10-09" lugar_nacimiento="Guadalajara"  fecha_fallecimiento="1994-10-09" lugar_fallecimiento="Guadalajara">
+					<comentario>Mi bisabuelo paterno</comentario>	
+					<coordenadas_nacimiento longitud="-3.1718" latitud="40.6245" altitud="586456"> </coordenadas_nacimiento> 
+					<coordenadas_fallecimiento longitud="-3.1618" latitud="40.6145" altitud="964333"> </coordenadas_fallecimiento> 
+					<foto>papapili.jpg</foto> 	
+				</datos>  
+			</persona>
+		</persona>
+		<persona nombre="Alvaro" apellidos="Castillo Morán">
+			<datos fecha_nacimiento="1924-10-09" lugar_nacimiento="Guadalajara">
+				<comentario>Mi abuelo paterno</comentario>	
+				<coordenadas_nacimiento longitud="-3.1518" latitud="40.6445" altitud="586456"> </coordenadas_nacimiento> 
+				<foto>alvaro.jpg</foto> 	
+			</datos>
+			<persona nombre="Nuria" apellidos="Serena del García">
+				<datos fecha_nacimiento="1924-10-09" lugar_nacimiento="Guadalajara"  fecha_fallecimiento="1994-10-09" lugar_fallecimiento="Guadalajara">
+					<comentario>Mi bisabuela paterna</comentario>	
+					<coordenadas_nacimiento longitud="-3.1618" latitud="40.6345" altitud="586456"> </coordenadas_nacimiento> 
+					<coordenadas_fallecimiento longitud="-3.1718" latitud="40.6345" altitud="964333"> </coordenadas_fallecimiento> 
+					<foto>mamaalvaro.jpg</foto> 	
+				</datos>
+			</persona>
+			<persona nombre="Jose" apellidos="García Morán">
+				<datos fecha_nacimiento="1924-10-09" lugar_nacimiento="Guadalajara"  fecha_fallecimiento="2000-10-09" lugar_fallecimiento="Guadalajara">
+					<comentario>Mi bisabuelo paterno</comentario>	
+					<coordenadas_nacimiento longitud="-3.1618" latitud="40.6245" altitud="586456"> </coordenadas_nacimiento> 
+					<coordenadas_fallecimiento longitud="-3.1717" latitud="40.6433" altitud="964333"> </coordenadas_fallecimiento> 
+					<foto>papaalvaro.jpg</foto> 	
+				</datos>
+			</persona>
+		</persona>
+    </persona>
+</persona>
+
+
+
+</personas>

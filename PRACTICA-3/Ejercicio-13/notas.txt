@@ -1,0 +1,5 @@
+A) leer fichero, sacar puntos y mostrar
+B) subir el kml a lugar público y mostrar directamente
+
+A) crear el GeoJson a mano
+B) crear el GeoJson despues de leer el kml

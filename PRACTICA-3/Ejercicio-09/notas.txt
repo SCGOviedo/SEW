@@ -1,0 +1,2 @@
+cambiar el metodo que lee 'json'->'xml'
+recorrer el xml con jquery

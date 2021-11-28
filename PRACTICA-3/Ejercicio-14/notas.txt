@@ -1,0 +1,5 @@
+mira el addevenlistener para obtener la posicion del raton
+
+3ra api: lock mouse?
+
+Igual un juego donde muevas una bola esquivando otras

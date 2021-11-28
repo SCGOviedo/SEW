@@ -1,0 +1,3 @@
+si o si con apache, o no tira
+si no quiero meter la tarjeta, usar openstreetmap (o MAPBOX)
+tarea 6, sacar posicion y tiempo

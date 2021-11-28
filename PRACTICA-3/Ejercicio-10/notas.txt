@@ -1,0 +1,3 @@
+da igual la divisa.
+Hacer tonterias con el resultado, que se valora la utilidad y originalidad (calcular el precio de un litro...)
+Buscar api con dicumentacion clara y simplre

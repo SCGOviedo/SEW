@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id='Personas kml'>
+<Placemark>
+<name>Nacimiento Sergio Castillo García</name>
+<description>Lugar Nacimiento: Yo</description>
+<Point>
+<coordinates>
+-5.5696,42.6000
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Encarna García del Río</name>
+<description>Lugar Nacimiento: Mi madre</description>
+<Point>
+<coordinates>
+-5.5784,42.6003
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Mari García del Río</name>
+<description>Lugar Nacimiento: Mi abuela materna</description>
+<Point>
+<coordinates>
+-5.5684,42.6110
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Paqui Serena del García</name>
+<description>Lugar Nacimiento: Mi bisabuela materna</description>
+<Point>
+<coordinates>
+-5.5700,42.5803
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Paqui Serena del García</name>
+<description>Lugar Fallecimiento: Mi bisabuela materna</description>
+<Point>
+<coordinates>
+-5.5584,42.5603
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Pepe García Morán</name>
+<description>Lugar Nacimiento: Mi bisabuelo materno</description>
+<Point>
+<coordinates>
+-5.510,42.6003
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Pepe García Morán</name>
+<description>Lugar Fallecimiento: Mi bisabuelo materno</description>
+<Point>
+<coordinates>
+-5.500,42.6053
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Antonio García Morán</name>
+<description>Lugar Nacimiento: Mi abuelo materno</description>
+<Point>
+<coordinates>
+-5.8613,42.8430
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Antonio García Morán</name>
+<description>Lugar Fallecimiento: Mi abuelo materno</description>
+<Point>
+<coordinates>
+-5.7013,42.8030
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Rosa Serena del García</name>
+<description>Lugar Nacimiento: Mi bisabuela materna</description>
+<Point>
+<coordinates>
+-5.8613,42.8030
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Rosa Serena del García</name>
+<description>Lugar Fallecimiento: Mi bisabuela materna</description>
+<Point>
+<coordinates>
+-5.5313,42.8430
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Luis García Morán</name>
+<description>Lugar Nacimiento: Mi bisabuelo materno</description>
+<Point>
+<coordinates>
+-5.9613,42.8830
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Luis García Morán</name>
+<description>Lugar Fallecimiento: Mi bisabuelo materno</description>
+<Point>
+<coordinates>
+-5.5813,42.8430
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Carlos Castillo Serena </name>
+<description>Lugar Nacimiento: Mi padre</description>
+<Point>
+<coordinates>
+6.0236,47.2379
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Pili Serena del Río</name>
+<description>Lugar Nacimiento: Mi abuela paterna</description>
+<Point>
+<coordinates>
+-3.1718,40.6145
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Pili Serena del Río</name>
+<description>Lugar Fallecimiento: Mi abuela paterna</description>
+<Point>
+<coordinates>
+-3.1618,40.6445
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Josefina Serena del García</name>
+<description>Lugar Nacimiento: Mi bisabuela paterna</description>
+<Point>
+<coordinates>
+-3.1518,40.6245
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Josefina Serena del García</name>
+<description>Lugar Fallecimiento: Mi bisabuela paterna</description>
+<Point>
+<coordinates>
+-3.1618,40.6345
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Paco García Morán</name>
+<description>Lugar Nacimiento: Mi bisabuelo paterno</description>
+<Point>
+<coordinates>
+-3.1718,40.6245
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Paco García Morán</name>
+<description>Lugar Fallecimiento: Mi bisabuelo paterno</description>
+<Point>
+<coordinates>
+-3.1618,40.6145
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Alvaro Castillo Morán</name>
+<description>Lugar Nacimiento: Mi abuelo paterno</description>
+<Point>
+<coordinates>
+-3.1518,40.6445
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Nuria Serena del García</name>
+<description>Lugar Nacimiento: Mi bisabuela paterna</description>
+<Point>
+<coordinates>
+-3.1618,40.6345
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Nuria Serena del García</name>
+<description>Lugar Fallecimiento: Mi bisabuela paterna</description>
+<Point>
+<coordinates>
+-3.1718,40.6345
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nacimiento Jose García Morán</name>
+<description>Lugar Nacimiento: Mi bisabuelo paterno</description>
+<Point>
+<coordinates>
+-3.1618,40.6245
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fallecimiento Jose García Morán</name>
+<description>Lugar Fallecimiento: Mi bisabuelo paterno</description>
+<Point>
+<coordinates>
+-3.1717,40.6433
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+</Document>
+</kml>
