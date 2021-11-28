@@ -8,7 +8,7 @@ class Objeto {
         var archivos = files;
         var section = "<section></section>";
         $("section").last().remove();
-        $("p").last().after(section);
+        $("input").last().after(section);
         for (let archivo of archivos) {
             this.imprimirArchivo(archivo);
         }
