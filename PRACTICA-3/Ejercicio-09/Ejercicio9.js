@@ -11,7 +11,7 @@ class Objeto {
         this.error = "<h2>¡problemas! No puedo obtener información de <a href='http://openweathermap.org'>OpenWeatherMap</a></h2>";
     }
     cargarDatos(ciudad) {
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad + this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + ciudad + this.tipo + this.unidades + this.idioma + "&APPID=" + this.apikey;
         $.ajax({
             dataType: "xml",
             url: this.url,
