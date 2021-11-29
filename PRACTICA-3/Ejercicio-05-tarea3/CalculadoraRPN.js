@@ -176,15 +176,12 @@ class Calculadora {
             texto += this.memoria[i] + "\r\n"
         }
         this.pantalla.value = texto;
-        texto += this.resultado;
-        this.pantalla.value = texto;
-        /*
         
-        this.pantalla.value = texto;
+        
         
         var pantalla2 = document.getElementsByTagName("textarea")[1];
         texto = this.resultado;
-        pantalla2.value = texto;*/
+        pantalla2.value = texto;
         this.teclasDisponibles();
     }
     teclas(object,event) {
