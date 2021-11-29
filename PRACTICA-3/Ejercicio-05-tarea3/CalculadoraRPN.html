@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sergio Castillo García" />
+    <meta name="description"
+        content="Página web creada para la práctica de JS de la asignatura Software y Estándares para la Web" />
+    <meta name="keywords" content="sergio castillo">
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>CalculadoraRPN</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <script src="CalculadoraRPN.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora RPN</h1>
+    <label for="pantalla">Tarea 5</label>
+    <label for="pantalla2">Por Sergio Castillo</label>
+    <form>
+        <textarea disabled id="pantalla" >0</textarea>
+        <!--<textarea disabled id="pantalla2" >0</textarea>-->
+        <input type="button" value="asin" onClick="calculadora.asin()" />
+        <input type="button" value="acos" onClick="calculadora.acos()" />
+        <input type="button" value="atan" onClick="calculadora.atan()" />
+        <!--<input type="button" value="DEL" onClick="calculadora.delete()" />-->
+        <input type="button" value="√" onClick="calculadora.raiz()" />
+
+        <input type="button" value="sin" onClick="calculadora.sin()" />
+        <input type="button" value="cos" onClick="calculadora.cos()" />
+        <input type="button" value="tan" onClick="calculadora.tan()" />
+        <input type="button" value="/" onClick="calculadora.division()" />
+
+
+
+        <input type="button" value="7" onClick="calculadora.digitos(7)" />
+        <input type="button" value="8" onClick="calculadora.digitos(8)" />
+        <input type="button" value="9" onClick="calculadora.digitos(9)" />
+        <input type="button" value="*" onClick="calculadora.multiplicacion()" />
+
+
+        <input type="button" value="4" onClick="calculadora.digitos(4)" />
+        <input type="button" value="5" onClick="calculadora.digitos(5)" />
+        <input type="button" value="6" onClick="calculadora.digitos(6)" />
+        <input type="button" value="-" onClick="calculadora.resta()" />
+
+
+        <input type="button" value="1" onClick="calculadora.digitos(1)" />
+        <input type="button" value="2" onClick="calculadora.digitos(2)" />
+        <input type="button" value="3" onClick="calculadora.digitos(3)" />
+        <input type="button" value="+" onClick="calculadora.suma()" />
+
+
+        <input type="button" value="0" onClick="calculadora.digitos(0)" />
+        <input type="button" value="." onClick="calculadora.punto()" />
+        <input type="submit" value="C" onClick="calculadora.borrar()" />
+        <input type="button" value="Enter" onClick="calculadora.enter()" />
+    </main>
+    </form>
+</body>
+
+</html>
