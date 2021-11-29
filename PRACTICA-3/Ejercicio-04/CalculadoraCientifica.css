@@ -30,7 +30,7 @@
   /*Especificidad: 012*/
   form input:disabled{
     color:rgb(44, 44, 44);
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(255, 0, 0);
     
   }
   /*Especificidad: 001*/
