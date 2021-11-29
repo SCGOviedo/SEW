@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sergio Castillo García" />
+    <meta name="description"
+        content="Página web creada para la práctica de JS de la asignatura Software y Estándares para la Web" />
+    <meta name="keywords" content="sergio castillo">
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio6.css" />
+    <script src="Ejercicio6.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora RPN, Cambio de base</h1>
+    <label for="pantalla">Por Sergio Castillo </label>
+    <form>
+        <textarea disabled id="pantalla" >0</textarea>
+        <textarea disabled id="pantalla2">0</textarea>
+
+
+        <input type="button" value="x₂" onClick="calculadora.bas2()" />
+        <input type="button" value="x₈" onClick="calculadora.bas8()" />
+        <input type="button" value="x₁₀" onClick="calculadora.bas10()" />
+        <input type="button" value="x₁₆" onClick="calculadora.bas16()" />
+
+
+        <input type="button" value="sin" onClick="calculadora.sin()" disabled/>
+        <input type="button" value="cos" onClick="calculadora.cos()" disabled/>
+        <input type="button" value="tan" onClick="calculadora.tan()" disabled/>
+        <input type="button" value="-" onClick="calculadora.resta()" disabled/>
+
+        <input type="button" value="D" onClick="calculadora.digitos('d')" disabled />
+        <input type="button" value="E" onClick="calculadora.digitos('e')" disabled />
+        <input type="button" value="F" onClick="calculadora.digitos('f')" disabled />
+        <input type="button" value="+" onClick="calculadora.suma()" disabled/>
+        
+        <input type="button" value="A" onClick="calculadora.digitos('a')" disabled />
+        <input type="button" value="B" onClick="calculadora.digitos('b')" disabled />
+        <input type="button" value="C" onClick="calculadora.digitos('c')" disabled />
+
+        <input type="button" value="/" onClick="calculadora.division()" disabled/>
+
+
+
+        <input type="button" value="7" onClick="calculadora.digitos(7)" />
+        <input type="button" value="8" onClick="calculadora.digitos(8)" />
+        <input type="button" value="9" onClick="calculadora.digitos(9)" />
+        <input type="button" value="*" onClick="calculadora.multiplicacion()" disabled/>
+
+
+        <input type="button" value="4" onClick="calculadora.digitos(4)" />
+        <input type="button" value="5" onClick="calculadora.digitos(5)" />
+        <input type="button" value="6" onClick="calculadora.digitos(6)" />
+        <input type="button" value="DEL" onClick="calculadora.delete()" disabled/>
+
+
+        <input type="button" value="1" onClick="calculadora.digitos(1)" />
+        <input type="button" value="2" onClick="calculadora.digitos(2)" />
+        <input type="button" value="3" onClick="calculadora.digitos(3)" />
+        <input type="button" value="⌂" onClick="calculadora.borrarUna()" />
+
+
+        <input type="button" value="0" onClick="calculadora.digitos(0)" />
+        <input type="submit" value="C" onClick="calculadora.borrar()" />
+        <input type="button" value="Enter" onClick="calculadora.enter()" />
+
+    </form>
+</body>
+
+</html>
