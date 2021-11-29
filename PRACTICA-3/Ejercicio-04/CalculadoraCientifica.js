@@ -1,145 +1,153 @@
 /* CalculadoraCientifica.js */
-class Calculadora {
+    class Calculadora {
 
-    constructor() {
-        this.resultado = "";
-        this.memoria = 0;
-        this.operadores = 0;
-    }
-    digitos(numero) {
-        this.resultado += numero
-    }
-    punto() {
-        this.resultado += "."
-    }
+        constructor() {
+            this.resultado = "";
+            this.memoria = 0;
+            this.operadores = 0;
 
-    suma() {
-        if (this.resultado.slice(-1) >= '0' && this.resultado.slice(-1) <= '9')
+            document.addEventListener( 'keydown',()=>this.teclas(this,event));
+        }
+        digitos(numero) {
+            this.resultado += numero;
+           this.mostrar();
+        }
+        punto() {
+            this.resultado += ".";
+           this.mostrar();
+        }
+    
+        suma() {
+            if (this.resultado.slice(-1) >= '0' && this.resultado.slice(-1) <= '9')
+                this.hayQueOperar();
+            this.resultado += "+";
+           this.mostrar();
+        }
+        resta() {
+            if (this.resultado.slice(-1) >= '0' && this.resultado.slice(-1) <= '9')
+                this.hayQueOperar();
+            this.resultado += "-";
+           this.mostrar();
+        }
+        multiplicacion() {
             this.hayQueOperar();
-        this.resultado += "+"
-    }
-    resta() {
-        if (this.resultado.slice(-1) >= '0' && this.resultado.slice(-1) <= '9')
+            this.resultado += "*";
+           this.mostrar();
+        }
+    
+        division() {
             this.hayQueOperar();
-        this.resultado += "-"
-    }
-    multiplicacion() {
-        this.hayQueOperar();
-        this.resultado += "*"
-    }
-
-    division() {
-        this.hayQueOperar();
-        this.resultado += "/"
-    }
-
-    mrc() {
-        this.resultado = Number(this.memoria) + "";
-    }
-
-    mMas() {
-        this.igual();
-        this.memoria += Number(this.resultado);
-        this.mrc();
-    }
-
-    mMenos() {
-        this.igual();
-        this.memoria -= Number(this.resultado);
-        this.mrc();
-    }
-
-    borrar() {
-        this.operadores = 0;
-        this.resultado = "";
-    }
-
-    igual() {
-        var numero = "";
-        var numero1 = Number(0);
-        var numero2 = Number(0);
-        var operador = "";
-        var primero = false;
-        try {
-            for (var i = 0; i < this.resultado.length; i++) {//recorre la pantalla, caracter a caracter
-                var actual = this.resultado.charAt(i);
-                if ((actual >= '0' && actual <= '9') || actual == '.') {//si es un número o punto, se va guardando
-                    numero += actual;
-                }
-                else {//cuando es un operador
-                    if (numero == "") {
-                        if (actual == '-' || actual == '+') {//el operado '-' puede ser dos cosas diferentes
-                            numero += actual;
+            this.resultado += "/";
+           this.mostrar();
+        }
+    
+        mrc() {
+            this.resultado = Number(this.memoria) + "";;
+           this.mostrar();
+        }
+    
+        mMas() {
+            this.igual();
+            this.memoria += Number(this.resultado);
+            this.mrc();
+        }
+    
+        mMenos() {
+            this.igual();
+            this.memoria -= Number(this.resultado);
+            this.mrc();
+        }
+    
+        borrar() {
+            this.operadores = 0;
+            this.resultado = "";;
+           this.mostrar();
+        }
+    
+        igual() {
+            var numero = "";
+            var numero1 = Number(0);
+            var numero2 = Number(0);
+            var operador = "";
+            var primero = false;
+            try {
+                for (var i = 0; i < this.resultado.length; i++) {//recorre la pantalla, caracter a caracter
+                    var actual = this.resultado.charAt(i);
+                    if ((actual >= '0' && actual <= '9') || actual == '.') {//si es un número o punto, se va guardando
+                        numero += actual;
+                    }
+                    else {//cuando es un operador
+                        if (numero == "") {
+                            if (actual == '-' || actual == '+') {//el operado '-' puede ser dos cosas diferentes
+                                numero += actual;
+                            }
+                        }
+                        else if (!primero) {
+                            numero1 = Number(numero);//se guarda el número
+                            operador = actual;//se guarda el operador
+                            var numero = "";
+                            primero = true;
                         }
                     }
-                    else if (!primero) {
-                        numero1 = Number(numero);//se guarda el número
-                        operador = actual;//se guarda el operador
-                        var numero = "";
-                        primero = true;
-                    }
                 }
+                if (numero.length > 0)//si se puede, se guarda el segundo número
+                    numero2 = Number(numero);
+                if (!primero) {
+                    var operador = "+";
+                }
+                this.resultado = "" + (eval(numero1 + operador + numero2));//se le pasa al eval dos Number y un operador
+                this.operadores = 0;;
+               this.mostrar();
             }
-            if (numero.length > 0)//si se puede, se guarda el segundo número
-                numero2 = Number(numero);
-            if (!primero) {
-                var operador = "+";
+            catch (err) {
+                alert("Error = Se ha confundido de tecla");
+                this.borrar();
             }
-            this.resultado = "" + (eval(numero1 + operador + numero2));//se le pasa al eval dos Number y un operador
-            this.operadores = 0;
         }
-        catch (err) {
-            alert("Error = Se ha confundido de tecla");
-            this.borrar();
+    
+        hayQueOperar() {
+            this.operadores++;
+            if (this.operadores > 1) {//si ya había un operador, se calcula el valor
+                this.igual();
+                this.mostrar();
+                this.operadores = 1;
+            }
+        }
+       mostrar() {
+            this.pantalla = document.getElementsByTagName("input")[0];
+            this.pantalla.value = this.resultado;
+        }
+        teclas(object,event) {
+            var numeroTecla = String.fromCharCode(event.keyCode);
+            var tecla = event.keyCode;
+            if (numeroTecla >= '0' && numeroTecla <= '9') {
+                object.digitos(numeroTecla);
+            }
+            else if (tecla >= 96 && tecla <= 105) {
+                object.digitos(tecla - 96);
+            }
+            else if (tecla == 109) {
+                object.resta();
+            }
+            else if (tecla == 107) {
+                object.suma();
+            }
+            else if (tecla == 106) {
+                object.multiplicacion();
+            }
+            else if (tecla == 111) {
+                object.division();
+            }
+            else if (tecla == 13) {//intro
+                object.igual();
+    
+            }
+            else if (tecla == 110) {
+                object.punto();
+            }
         }
     }
-
-    hayQueOperar() {
-        this.operadores++;
-        if (this.operadores > 1) {//si ya había un operador, se calcula el valor
-            this.igual();
-            this.mostrar();
-            this.operadores = 1;
-        }
-    }
-    mostrar() {
-        this.pantalla = document.getElementsByTagName("input")[0];
-        this.pantalla.value = this.resultado;
-    }
-    teclas(event) {
-        var numeroTecla = String.fromCharCode(event.keyCode);
-        var tecla = event.keyCode;
-        if (numeroTecla >= '0' && numeroTecla <= '9') {
-            this.digitos(numeroTecla);
-        }
-        else if (tecla >= 96 && tecla <= 105) {
-            this.digitos(tecla - 96);
-        }
-        else if (tecla == 109) {
-            this.resta();
-        }
-        else if (tecla == 107) {
-            this.suma();
-        }
-        else if (tecla == 106) {
-            this.multiplicacion();
-        }
-        else if (tecla == 111) {
-            this.division();
-        }
-        else if (tecla == 13) {//intro
-            this.igual();
-
-        }
-        else if (tecla == 110) {
-            this.punto();
-        }
-        else if (tecla == 46) {//suprimir
-            this.borrar();
-        }
-        this.mostrar();
-    }
-}
+    var calculadora = new Calculadora();
 class CalculadoraCientifica extends Calculadora {
     constructor() {
         super();
@@ -161,6 +169,7 @@ class CalculadoraCientifica extends Calculadora {
         this.resultado = "(";
         this.antiguosOperadores = this.operadores;
         this.operadores = 0;
+        this.mostrar();
     }
     parentesisDerecho() {
         var boton = document.getElementsByTagName("input")[22];
@@ -173,6 +182,7 @@ class CalculadoraCientifica extends Calculadora {
         this.resultado = this.resultadoSinParentesis;
         this.resultadoSinParentesis = "";
         this.operadores += this.antiguosOperadores;
+        this.mostrar();
     }
     cambioSigno() {
         this.igual();
@@ -182,6 +192,7 @@ class CalculadoraCientifica extends Calculadora {
     factorial() {
         this.igual();
         this.resultado = "" + this.factorialCalculador(Number(this.resultado));
+        this.mostrar();
     }
     factorialCalculador(number) {
         try {
@@ -196,17 +207,21 @@ class CalculadoraCientifica extends Calculadora {
     }
     pi() {
         this.resultado += Math.PI;
+        this.mostrar();
     }
     e() {
         this.resultado += Math.E;
+        this.mostrar();
     }
     borrarUna() {
         this.resultado = this.resultado.slice(0, -1);
+        this.mostrar();
     }
     raiz() {
         try {
             this.igual();
             this.resultado = "" + (Math.pow(Number(this.resultado), 1 / 2));
+            this.mostrar();
         }
         catch (err) {
             alert("Error = No se puede calcular la raíz cuadrada");
@@ -216,6 +231,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             this.igual();
             this.resultado = "" + Math.pow(10, Number(this.resultado));
+            this.mostrar();
         }
         catch (err) {
             alert("Error = No se puede calcular");
@@ -225,6 +241,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             this.igual();
             this.resultado = "" + Math.log10(Number(this.resultado));
+            this.mostrar();
         }
         catch (err) {
             alert("Error = No se puede calcular el logaritmo");
@@ -234,6 +251,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             this.igual();
             this.resultado = "" + Math.log(Number(this.resultado));
+            this.mostrar();
         }
         catch (err) {
             alert("Error = No se puede calcular el logaritmo neperiano");
@@ -243,6 +261,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             this.igual();
             this.resultado = "" + Math.exp(Number(this.resultado));
+            this.mostrar();
         }
         catch (err) {
             alert("Error = " + err);
@@ -251,11 +270,13 @@ class CalculadoraCientifica extends Calculadora {
     mod() {
         this.hayQueOperar();
         this.resultado = this.resultado + "%";
+        this.mostrar();
     }
     x2() {
         try {
             this.igual();
             this.resultado = "" + Math.pow(Number(this.resultado), 2);
+            this.mostrar();
         }
         catch (err) {
             alert("Error = No se puede calcular el cuadrado");
@@ -265,11 +286,13 @@ class CalculadoraCientifica extends Calculadora {
         this.igual();
         this.resultado += "**"
         this.operadores = 1;
+        this.mostrar();
     }
     IsDeg() {
         this.igual();
         if (this.isDeg == true) {
             this.resultado = eval(Number(this.resultado) + "*" + Number(Math.PI) + "/" + Number(180))
+            this.mostrar();
         }
     }
     sin() {
@@ -283,6 +306,7 @@ class CalculadoraCientifica extends Calculadora {
         catch (err) {
             alert("Error = No se puede calcular el seno");
         }
+        this.mostrar();
     }
     cos() {
         try {
@@ -295,6 +319,7 @@ class CalculadoraCientifica extends Calculadora {
         catch (err) {
             alert("Error = No se puede calcular el coseno");
         }
+        this.mostrar();
     }
     tan() {
         try {
@@ -307,6 +332,7 @@ class CalculadoraCientifica extends Calculadora {
         catch (err) {
             alert("Error = No se puede calcular la tangente");
         }
+        this.mostrar();
     }
     mc() {
         this.memoriaArray = new Array();
@@ -323,6 +349,7 @@ class CalculadoraCientifica extends Calculadora {
             this.memoriaArray[this.memoriaArray.length] = this.memoria;
             this.memoria = Number(0);
         }
+        this.mostrar();
     }
     deg() {
         var boton = document.getElementsByTagName("input")[1];
@@ -334,6 +361,7 @@ class CalculadoraCientifica extends Calculadora {
             boton.value = "DEG";
         }
         this.isDeg = !this.isDeg;
+        this.mostrar();
     }
     fe() {
         this.igual();
@@ -343,11 +371,13 @@ class CalculadoraCientifica extends Calculadora {
         else
             this.resultado = Number(this.resultado).toFixed();
         this.isFe = !this.isFe;
+        this.mostrar();
     }
     abs() {
         try {
             this.igual();
             this.resultado = "" + Math.abs(Number(this.resultado));
+            this.mostrar();
         }
         catch (err) {
             alert("Error = No se puede calcular el valor absoluto");
@@ -357,6 +387,7 @@ class CalculadoraCientifica extends Calculadora {
         try {
             this.igual();
             this.resultado = "" + eval(Number(1) / Number(this.resultado));
+            this.mostrar();
         }
         catch (err) {
             alert("Error = No se puede calcular la inversa");
@@ -374,6 +405,7 @@ class CalculadoraCientifica extends Calculadora {
             this.resultadoSinParentesis = "";
             this.operadores += this.antiguosOperadores;
         }
+        this.mostrar();
     }
     borrarCientifica() {
         var boton = document.getElementsByTagName("input")[22];
@@ -382,6 +414,7 @@ class CalculadoraCientifica extends Calculadora {
         boton.disabled = true;
         this.resultadoSinParentesis = "";
         this.borrar();
+        this.mostrar();
     }
     secondTrigo() {
         var sen = document.getElementsByTagName("input")[3];
@@ -399,15 +432,6 @@ class CalculadoraCientifica extends Calculadora {
 
         }
         this.second = !this.second;
-    }
-    teclas(event) {
-        var tecla = event.keyCode;
-        if (tecla == 8) {//tecla de borrar
-            this.borrarUna();
-        }
-        else {
-            super.teclas(event);
-        }
         this.mostrar();
     }
 }

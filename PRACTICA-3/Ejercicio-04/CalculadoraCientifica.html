@@ -14,10 +14,10 @@
     <script src="CalculadoraCientifica.js"></script>
 </head>
 
-<body onKeyUp="calculadora.teclas(event)">
+<body>
     <h1>Calculadora Científica</h1>
     <label for="pantalla">Por Sergio Castillo </label>
-    <form onclick="calculadora.mostrar()">
+    <form>
 
         <input type="text" value="" disabled id="pantalla" />
 
@@ -39,7 +39,7 @@
         <input type="button" value="2nd" onClick="calculadora.secondTrigo()" />
         <input type="button" value="π" onClick="calculadora.pi()" />
         <input type="button" value="e" onClick="calculadora.e()" />
-        <input type="button" value="C" onClick="calculadora.borrarCientifica()" />
+        <input type="submit" value="C" onClick="calculadora.borrarCientifica()" />
         <input type="button" value="⌂" onClick="calculadora.borrarUnaCientifica()" />
 
 

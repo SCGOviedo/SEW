@@ -3,13 +3,16 @@ class Calculadora {
 
     constructor() {
         this.resultado = "";
-        this.memoria = new Array();
+        this.memoria = new Array()
+        document.addEventListener( 'keydown',()=>this.teclas(this,event));
     }
     digitos(numero) {
-        this.resultado += numero;
+        this.resultado += numero;; 
+        this.mostrar();
     }
     punto() {
-        this.resultado += "."
+        this.resultado += ".";
+        this.mostrar();
     }
 
     suma() {
@@ -18,7 +21,8 @@ class Calculadora {
                 var number1 = Number(this.memoria.pop());
                 var number2 = Number(this.memoria.pop());
 
-                this.memoria.push(number1 + number2);
+                this.memoria.push(number1 + number2);;
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -30,7 +34,8 @@ class Calculadora {
                 var number1 = Number(this.memoria.pop());
                 var number2 = Number(this.memoria.pop());
 
-                this.memoria.push(number2 - number1);
+                this.memoria.push(number2 - number1);;
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -42,7 +47,8 @@ class Calculadora {
                 var number1 = Number(this.memoria.pop());
                 var number2 = Number(this.memoria.pop());
 
-                this.memoria.push(number1 * number2);
+                this.memoria.push(number1 * number2);;
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -55,7 +61,8 @@ class Calculadora {
                 var number1 = Number(this.memoria.pop());
                 var number2 = Number(this.memoria.pop());
 
-                this.memoria.push(number2 / number1);
+                this.memoria.push(number2 / number1);;
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -67,7 +74,8 @@ class Calculadora {
             if (this.memoria.length >= 1) {
                 var number1 = Number(this.memoria.pop());
 
-                this.memoria.push(Math.sin(number1));
+                this.memoria.push(Math.sin(number1));;
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -78,7 +86,8 @@ class Calculadora {
             if (this.memoria.length >= 1) {
                 var number1 = Number(this.memoria.pop());
 
-                this.memoria.push(Math.cos(number1));
+                this.memoria.push(Math.cos(number1));;
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -89,7 +98,8 @@ class Calculadora {
             if (this.memoria.length >= 1) {
                 var number1 = Number(this.memoria.pop());
 
-                this.memoria.push(Math.tan(number1));
+                this.memoria.push(Math.tan(number1));;
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -104,7 +114,8 @@ class Calculadora {
                 else {
                     alert("Ha de ser menor o igual a 1");
                     this.memoria.push(number1);
-                }
+                };
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -119,7 +130,8 @@ class Calculadora {
                 else {
                     alert("Ha de ser menor o igual a 1");
                     this.memoria.push(number1);
-                }
+                };
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -129,7 +141,8 @@ class Calculadora {
         try {
             if (this.memoria.length >= 1) {
                 var number1 = Number(this.memoria.pop());
-                this.memoria.push(Math.atan(number1));
+                this.memoria.push(Math.atan(number1));;
+                this.mostrar();
             }
         } catch {
             alert("Error inexperado");
@@ -144,14 +157,16 @@ class Calculadora {
             var meter = Number(this.resultado)
             if (!Number.isNaN(meter))
                 this.memoria.push(meter);
-            this.resultado = "";
+            this.resultado = "0";;
+            this.mostrar();
         }
         catch (err) {
             alert("Error");
         }
     }
     delete() {
-        this.memoria.pop();
+        this.memoria.pop();;
+        this.mostrar();
     }
 
     mostrar() {
@@ -164,37 +179,33 @@ class Calculadora {
         texto += this.resultado;
         this.pantalla.value = texto;
     }
-    teclas(event) {
+    teclas(object,event) {
         var numeroTecla = String.fromCharCode(event.keyCode);
         var tecla = event.keyCode;
         if (numeroTecla >= '0' && numeroTecla <= '9') {
-            this.digitos(numeroTecla);
+            object.digitos(numeroTecla);
         }
         else if (tecla >= 96 && tecla <= 105) {
-            this.digitos(tecla - 96);
+            object.digitos(tecla - 96);
         }
         else if (tecla == 109) {
-            this.resta();
+            object.resta();
         }
         else if (tecla == 107) {
-            this.suma();
+            object.suma();
         }
         else if (tecla == 106) {
-            this.multiplicacion();
+            object.multiplicacion();
         }
         else if (tecla == 111) {
-            this.division();
+            object.division();
         }
         else if (tecla == 13) {//intro
-            this.enter();
+            object.enter();
         }
         else if (tecla == 110) {
-            this.punto();
+            object.punto();
         }
-        else if (tecla == 46) {//suprimir
-            this.borrar();
-        }
-        this.mostrar();
     }
 }
 var calculadora = new Calculadora();

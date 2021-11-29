@@ -14,10 +14,10 @@
     <script src="Ejercicio-06.js"></script>
 </head>
 
-<body onKeyUp="calculadora.teclas(event)">
+<body>
     <h1>Calculadora RPN, Cambio de base</h1>
     <label for="pantalla">Por Sergio Castillo </label>
-    <form onclick="calculadora.mostrarEspecialidad()">
+    <form>
         <textarea disabled id="pantalla" >0</textarea>
 
 
@@ -63,7 +63,7 @@
 
         <input type="button" value="0" onClick="calculadora.digitos(0)" />
         <input type="button" value=" " disabled />
-        <input type="button" value="C" onClick="calculadora.borrar()" />
+        <input type="submit" value="C" onClick="calculadora.borrar()" />
         <input type="button" value="Enter" onClick="calculadora.enter()" />
 
     </form>
