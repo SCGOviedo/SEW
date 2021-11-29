@@ -16,8 +16,8 @@ body  {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row: 1;
-  color:white;
-  background-color: rgb(44, 44, 44);
+  color:rgb(44, 44, 44);
+  background-color: white;
  }
   /*Especificidad: 002*/
   form input{
