@@ -5,36 +5,45 @@ class Calculadora {
         this.resultado = "";
         this.memoria = 0;
         this.operadores = 0;
+
+        document.addEventListener( 'keydown',()=>this.teclas(this,event));
     }
     digitos(numero) {
-        this.resultado += numero
+        this.resultado += numero;
+       this.mostrar();
     }
     punto() {
-        this.resultado += "."
+        this.resultado += ".";
+       this.mostrar();
     }
 
     suma() {
         if (this.resultado.slice(-1) >= '0' && this.resultado.slice(-1) <= '9')
             this.hayQueOperar();
-        this.resultado += "+"
+        this.resultado += "+";
+       this.mostrar();
     }
     resta() {
         if (this.resultado.slice(-1) >= '0' && this.resultado.slice(-1) <= '9')
             this.hayQueOperar();
-        this.resultado += "-"
+        this.resultado += "-";
+       this.mostrar();
     }
     multiplicacion() {
         this.hayQueOperar();
-        this.resultado += "*"
+        this.resultado += "*";
+       this.mostrar();
     }
 
     division() {
         this.hayQueOperar();
-        this.resultado += "/"
+        this.resultado += "/";
+       this.mostrar();
     }
 
     mrc() {
-        this.resultado = Number(this.memoria) + "";
+        this.resultado = Number(this.memoria) + "";;
+       this.mostrar();
     }
 
     mMas() {
@@ -51,7 +60,8 @@ class Calculadora {
 
     borrar() {
         this.operadores = 0;
-        this.resultado = "";
+        this.resultado = "";;
+       this.mostrar();
     }
 
     igual() {
@@ -86,7 +96,8 @@ class Calculadora {
                 var operador = "+";
             }
             this.resultado = "" + (eval(numero1 + operador + numero2));//se le pasa al eval dos Number y un operador
-            this.operadores = 0;
+            this.operadores = 0;;
+           this.mostrar();
         }
         catch (err) {
             alert("Error = Se ha confundido de tecla");
@@ -102,42 +113,39 @@ class Calculadora {
             this.operadores = 1;
         }
     }
-    mostrar() {
+   mostrar() {
         this.pantalla = document.getElementsByTagName("input")[0];
         this.pantalla.value = this.resultado;
     }
-    teclas(event) {
+    teclas(object,event) {
         var numeroTecla = String.fromCharCode(event.keyCode);
         var tecla = event.keyCode;
         if (numeroTecla >= '0' && numeroTecla <= '9') {
-            this.digitos(numeroTecla);
+            object.digitos(numeroTecla);
         }
         else if (tecla >= 96 && tecla <= 105) {
-            this.digitos(tecla - 96);
+            object.digitos(tecla - 96);
         }
         else if (tecla == 109) {
-            this.resta();
+            object.resta();
         }
         else if (tecla == 107) {
-            this.suma();
+            object.suma();
         }
         else if (tecla == 106) {
-            this.multiplicacion();
+            object.multiplicacion();
         }
         else if (tecla == 111) {
-            this.division();
+            object.division();
         }
         else if (tecla == 13) {//intro
-            this.igual();
+            object.igual();
 
         }
         else if (tecla == 110) {
-            this.punto();
+            object.punto();
         }
-        else if (tecla == 46) {//suprimir
-            this.borrar();
-        }
-        this.mostrar();
+        object.mostrar();
     }
 }
 var calculadora = new Calculadora();
