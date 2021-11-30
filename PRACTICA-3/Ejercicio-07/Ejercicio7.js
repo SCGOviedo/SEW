@@ -32,9 +32,12 @@ class Objeto {
     mostrarArbol(padre) {
         var query = $(padre).children();
         for (var i = 0; i < query.length; i++) {
-            var etiquetaPadre = $(query[i]).parent().get(0).tagName;
-            $(query[i]).prepend(document.createTextNode("Etiqueta padre : <" + etiquetaPadre + "> elemento : <" + $(query[i]).get(0).tagName + "> valor: "));
-            this.mostrarArbol( $(query[i]).prev().prop('nodeName'));
+            var actual=$(query[i]).prop('nodeName');
+            if(actual!="TABLE"){
+                var etiquetaPadre = $(query[i]).parent().get(0).tagName;
+                $(query[i]).prepend(document.createTextNode("Etiqueta padre : <" + etiquetaPadre + "> elemento : <" + $(query[i]).get(0).tagName + "> valor: "));
+                this.mostrarArbol( actual);
+            }
         }
     }
     sumarFilas() {

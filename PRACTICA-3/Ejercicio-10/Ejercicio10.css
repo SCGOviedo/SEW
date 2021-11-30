@@ -1,5 +1,6 @@
  /*Especificidad: 001*/
  body  {
+   font-family: Tahoma, sans-serif;
     background-color: rgb(255, 255, 255);
     color:rgb(0, 0, 0);
  }
@@ -12,15 +13,14 @@
  /*Especificidad: 001*/
  h2 {
  color: rgb(255, 255, 255);    
- background-color:rgb(48, 2, 36); 
- font-size: 90%;
- }
-  /*Especificidad: 001*/
-  h2 {
-   color: rgb(255, 255, 255);    
-   background-color:rgb(24, 24, 24); 
-   font-size: 90%;
-   }
+ background-color:rgb(24, 24, 24); 
+ font-size: 120%;
+ }/*Especificidad: 001*/
+ h3 {
+  color: rgb(255, 255, 255);    
+  background-color:rgb(71, 0, 48); 
+  font-size: 90%;
+  }
  /*Especificidad: 001*/
  p {
  color: rgb(0, 0, 0);    

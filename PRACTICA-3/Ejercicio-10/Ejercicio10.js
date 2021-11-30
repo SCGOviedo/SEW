@@ -2,7 +2,7 @@
 class Objeto {
 
     constructor() {
-        this.access_key = "3vw7au02edqy3hixk66u61j6dn1gml3q80bveoqpptrpdd71dy40l3ljjg6d";
+        this.access_key = "kaayv49135r91ui766shjt94whgp52ddexq07fbzip88jkw133adn5f7rpec";
         this.endpoint = 'latest';
         this.symbol = 'EUR';
         this.base = 'BRENTOIL';
@@ -23,10 +23,10 @@ class Objeto {
         if(status="success"){
             var brent = json.data.rates.EUR;
             //Brent Crude Oil
-            $("section").first().append("<h2>Brent Crude Oil</h2>");
-            $("section").first().append("<h3>€ Por barril</h3>");
+            $("section").first().append("<p>Brent Crude Oil<p>");
+            $("section").first().append("<h2>€ Por barril</h2>");
             $("section").first().append("<p>" + brent + "</p>");
-            $("section").first().append("<h3>€ Por litro</h3>");
+            $("section").first().append("<h2>€ Por litro</h2>");
             $("section").first().append("<p>" + brent / 159 + "</p>");
         }
     }
