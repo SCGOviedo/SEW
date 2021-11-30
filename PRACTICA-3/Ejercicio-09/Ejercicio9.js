@@ -21,7 +21,8 @@ class Objeto {
         });
     }
     mostrarError() {
-        $("p").html("¡Tenemos problemas! No puedo obtener XML de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+        $("p").first().remove();
+        $("h2").after("<p>¡Tenemos problemas! No puedo obtener json de <a href='http://openweathermap.org'>OpenWeatherMap</a> </p>");
     }
     cargar(datos) {
         var ciudad = $('city', datos).attr("name");
@@ -89,11 +90,13 @@ class Objeto {
         stringDatos += "<li>Hora de la medida: " + horaMedidaLocal + "</li>";
         stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li>";
 
-        $("p").html(stringDatos);
+        $("ul").first().remove();
+        $("p").first().remove();
+        $("h2").after(stringDatos);
         //Añade la foto
-        var linkFoto = '<img src="http://openweathermap.org/img/w/' + icono + '.png" />';
+        var linkFoto = '<img src="http://openweathermap.org/img/w/' + icono + '.png" alt="Icono tiempo" />';
         $('img').remove();
-        $('p').before(linkFoto);
+        $('ul').before(linkFoto);
     }
 }
 var objeto = new Objeto();

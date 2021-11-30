@@ -39,16 +39,18 @@ class Objeto {
             stringDatos += "<li>Descripción: " + datos.weather[0].description + "</li>";
             stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
             stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li></ul>";
-
-            $("p").html(stringDatos);
+            $("ul").first().remove();
+            $("p").first().remove();
+            $("h2").after(stringDatos);
             //Añade la foto
-            var linkFoto = '<img src="http://openweathermap.org/img/w/' + datos.weather[0].icon + '.png" />';
+            var linkFoto = '<img src="http://openweathermap.org/img/w/' + datos.weather[0].icon + '.png" alt="Icono tiempo" />';
             $('img').remove();
-            $('p').before(linkFoto);
+            $('ul').before(linkFoto);
         }
     }
     mostrarError() {
-        $("p").html("¡Tenemos problemas! No puedo obtener json de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+        $("p").first().remove();
+        $("h2").after("<p>¡Tenemos problemas! No puedo obtener json de <a href='http://openweathermap.org'>OpenWeatherMap</a> </p>");
     }
 }
 var objeto = new Objeto();
