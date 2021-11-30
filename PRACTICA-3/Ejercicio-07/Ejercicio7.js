@@ -17,23 +17,24 @@ class Objeto {
     originalH2() {
         $("h2").text("Esto es el encabezado h2");
     }
-    addH3() {
-        $("h3").first().after("<h3>Esto es el encabezado h3</h3>");
+    addP() {
+        $("h3").first().after("<p>Ha añadido un nuevo párrafo</h3>");
     }
-    doblarH3() {
-        $("h3").after("<h3>Esto es el encabezado h3</h3>");
+    doblarP() {
+        $("p").after("<p>Ha doblado los párrafos</p>");
     }
-    removeH3() {
-        $("h3").last().remove();
+    removeP() {
+        $("p").last().remove();
     }
-    removeAllH3() {
-        $("h3").remove();
+    removeAllP() {
+        $("p").remove();
     }
-    mostrarArbol() {
-        var query = $("p");
+    mostrarArbol(padre) {
+        var query = $(padre).children();
         for (var i = 0; i < query.length; i++) {
             var etiquetaPadre = $(query[i]).parent().get(0).tagName;
             $(query[i]).prepend(document.createTextNode("Etiqueta padre : <" + etiquetaPadre + "> elemento : <" + $(query[i]).get(0).tagName + "> valor: "));
+            this.mostrarArbol( $(query[i]).prev().prop('nodeName'));
         }
     }
     sumarFilas() {
