@@ -32,12 +32,10 @@ class Objeto {
     mostrarArbol(padre) {
         var query = $(padre).children();
         for (var i = 0; i < query.length; i++) {
-            var actual=$(query[i]).prop('nodeName');
-            if(actual!="TABLE"){
                 var etiquetaPadre = $(query[i]).parent().get(0).tagName;
-                $(query[i]).prepend(document.createTextNode("Etiqueta padre : <" + etiquetaPadre + "> elemento : <" + $(query[i]).get(0).tagName + "> valor: "));
+                var actual=$(query[i]).get(0).tagName;
+                $("h4").after("<p>Etiqueta padre : " + etiquetaPadre + " elemento : " + actual + " </p>");
                 this.mostrarArbol( actual);
-            }
         }
     }
     sumarFilas() {
