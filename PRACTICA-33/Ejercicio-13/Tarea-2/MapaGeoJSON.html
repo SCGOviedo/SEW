@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Sergio Castillo García" />
+  <meta name="description"
+    content="Página web creada para la práctica de JS de la asignatura Software y Estándares para la Web" />
+  <meta name="keywords" content="sergio castillo">
+  <meta name="viewport" content="width=device-width, initial scale=1.0" />
+  <title>Ejercicio 13</title>
+  <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU45qqAc_i56a8dzZ55-kb1vuO-_3Sk9U&callback=objeto.dinamicMap"></script>
+  <script src="MapaGeoJSON.js"></script>
+</head>
+
+<body>
+  <h1>Ejercicio 13, Tarea 1</h1>
+
+  <label for="boton">Seleccione un GeoJSON: </label>
+  <input type="file" onchange="objeto.leerArchivoTexto(this.files)" id="boton">
+  <main>
+  </main>
+  <section>
+    <h2>Hecho por Sergio Castillo</h2>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sergio Castillo García" />
+    <meta name="description"
+        content="Página web creada para la práctica de JS de la asignatura Software y Estándares para la Web" />
+    <meta name="keywords" content="sergio castillo">
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Ejercicio 7</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+</head>
+
+<body>
+    <h1>
+        Esto es el encabezado h1
+    </h1>
+    <button onclick="objeto.ocultar()">Ocultar H1</button>
+    <button onclick="objeto.mostrar()">Mostrar H1</button>
+    <h2>
+        Esto es el encabezado h2
+    </h2>
+    <button onclick="objeto.cambiarH2()">Cambiar h2</button>
+    <button onclick="objeto.originalH2()">h2 original</button>
+    <h3>
+        Esto es el encabezado h3
+    </h3>
+    <p>Esto es un párrafo</p>
+    <button onclick="objeto.addP()">Añadir un párrafo</button>
+    <button onclick="objeto.doblarP()">Doblar los párrafo</button>
+
+    <button onclick="objeto.removeP()">Eliminar un párrafo</button>
+    <button onclick="objeto.removeAllP()">Eliminar todos los párrafo</button>
+
+
+    <table>
+        <tr>
+            <th>F1</th>    
+            <th>F2</th>    
+        </tr> 
+        <tr>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <button onclick="objeto.sumarFilas()">Sumar filas</button>
+    <button onclick="objeto.sumarColumnas()">Sumar columnas</button>
+
+    
+    <button onclick="objeto.mostrarArbol('body')">Mostrar arbol de los elementos</button>
+    <h4>Arbol de los elementos</h4>
+</body>
+
+</html>

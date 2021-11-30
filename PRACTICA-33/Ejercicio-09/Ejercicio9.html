@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sergio Castillo García" />
+    <meta name="description"
+        content="Página web creada para la práctica de JS de la asignatura Software y Estándares para la Web" />
+    <meta name="keywords" content="sergio castillo">
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Ejercicio 9</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio9.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio9.js"></script>
+</head>
+
+<body>
+    <h1>
+        Pulse un botón para ver los datos de esa ciudad
+    </h1>
+    <button onclick="objeto.cargarDatos('Leon, Es')">León</button>
+    <button onclick="objeto.cargarDatos('Guadalajara, Es')">Guadalajara</button>
+    <button onclick="objeto.cargarDatos('besançon')">Besançon</button>
+    <button onclick="objeto.cargarDatos('Los Barrios de Luna')">Barrios de Luna</button>
+    <button onclick="objeto.cargarDatos('Alcala de Henares')">Alcalá de Henares</button>
+    <button onclick="objeto.cargarDatos('Oviedo')">Oviedo/Uviéu</button>
+    <h2>
+        Datos:
+    </h2>
+    <p>
+        Datos no disponibles
+    </p>
+</body>
+
+</html>

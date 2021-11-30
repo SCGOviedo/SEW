@@ -1,0 +1,32 @@
+{
+"type": "FeatureCollection",
+"name": "arbolGenealogico",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Nacimiento Sergio Castillo García", "description": "Lugar Nacimiento: Yo", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.5696, 42.6 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Encarna García del Río", "description": "Lugar Nacimiento: Mi madre", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.5784, 42.6003 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Mari García del Río", "description": "Lugar Nacimiento: Mi abuela materna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.5684, 42.611 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Paqui Serena del García", "description": "Lugar Nacimiento: Mi bisabuela materna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.57, 42.5803 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Paqui Serena del García", "description": "Lugar Fallecimiento: Mi bisabuela materna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.5584, 42.5603 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Pepe García Morán", "description": "Lugar Nacimiento: Mi bisabuelo materno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.51, 42.6003 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Pepe García Morán", "description": "Lugar Fallecimiento: Mi bisabuelo materno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.5, 42.6053 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Antonio García Morán", "description": "Lugar Nacimiento: Mi abuelo materno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.8613, 42.843 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Antonio García Morán", "description": "Lugar Fallecimiento: Mi abuelo materno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.7013, 42.803 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Rosa Serena del García", "description": "Lugar Nacimiento: Mi bisabuela materna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.8613, 42.803 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Rosa Serena del García", "description": "Lugar Fallecimiento: Mi bisabuela materna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.5313, 42.843 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Luis García Morán", "description": "Lugar Nacimiento: Mi bisabuelo materno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.9613, 42.883 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Luis García Morán", "description": "Lugar Fallecimiento: Mi bisabuelo materno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.5813, 42.843 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Carlos Castillo Serena ", "description": "Lugar Nacimiento: Mi padre", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ 6.0236, 47.2379 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Pili Serena del Río", "description": "Lugar Nacimiento: Mi abuela paterna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1718, 40.6145 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Pili Serena del Río", "description": "Lugar Fallecimiento: Mi abuela paterna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1618, 40.6445 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Josefina Serena del García", "description": "Lugar Nacimiento: Mi bisabuela paterna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1518, 40.6245 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Josefina Serena del García", "description": "Lugar Fallecimiento: Mi bisabuela paterna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1618, 40.6345 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Paco García Morán", "description": "Lugar Nacimiento: Mi bisabuelo paterno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1718, 40.6245 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Paco García Morán", "description": "Lugar Fallecimiento: Mi bisabuelo paterno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1618, 40.6145 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Alvaro Castillo Morán", "description": "Lugar Nacimiento: Mi abuelo paterno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1518, 40.6445 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Nuria Serena del García", "description": "Lugar Nacimiento: Mi bisabuela paterna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1618, 40.6345 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Nuria Serena del García", "description": "Lugar Fallecimiento: Mi bisabuela paterna", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1718, 40.6345 ] } },
+{ "type": "Feature", "properties": { "Name": "Nacimiento Jose García Morán", "description": "Lugar Nacimiento: Mi bisabuelo paterno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1618, 40.6245 ] } },
+{ "type": "Feature", "properties": { "Name": "Fallecimiento Jose García Morán", "description": "Lugar Fallecimiento: Mi bisabuelo paterno", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -3.1717, 40.6433 ] } }
+]
+}

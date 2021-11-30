@@ -1,0 +1,37 @@
+ /*Especificidad: 001*/
+ body  {
+   font-family: Tahoma, sans-serif;
+    background-color:rgb(255, 255, 255); 
+    color:black;
+    display: grid;
+ }
+ /*Especificidad: 001*/
+h1 {
+    color: #fff;    
+    background-color:rgb(0, 0, 0); 
+    font-size: 200%;
+ }
+ /*Especificidad: 001*/
+ h2 {
+   text-align: center;  
+   font-size: 200%;
+}
+ /*Especificidad: 001*/
+ main{
+   width:75%; 
+   height:50vw; 
+ }
+  
+ /*Especificidad: 001*/
+ input{
+   color: #fff;    
+    font-size: 200%;
+    margin-left: 10%;
+    background-color: rgb(34, 34, 34);
+ }
+ /*Especificidad: 001*/
+p {
+   color: rgb(0, 0, 0);    
+   background-color:rgb(255, 255, 255); 
+   font-size: 110%;
+ }

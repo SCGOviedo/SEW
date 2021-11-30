@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Sergio Castillo García" />
+  <meta name="description"
+    content="Página web creada para la práctica de JS de la asignatura Software y Estándares para la Web" />
+  <meta name="keywords" content="sergio castillo">
+  <meta name="viewport" content="width=device-width, initial scale=1.0" />
+  <title>Ejercicio 14</title>
+  <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+  <script src="Ejercicio14.js"></script>
+</head>
+
+<body onload="objeto.cargar()">
+  <h1>Ejercicio 14, pulse "Esc" para salir del canvas y/o de la pantalla completa</h1>
+  <form>
+    <input type="button" value="Pantalla completa" onClick="objeto.pantallaCompleta()" />
+    <input type="button" value="-" onClick="objeto.tam(-5)" />
+    <input type="button" value="+" onClick="objeto.tam(5)" />
+    <input type="button" value="Negro" onClick="objeto.cambiarColor('#000')" />
+    <input type="button" value="Azul" onClick="objeto.cambiarColor('#00008B')" />
+    <input type="button" value="Verde" onClick="objeto.cambiarColor('#006400')" />
+    <input type="button" value="Rojo" onClick="objeto.cambiarColor('#8B0000')" />
+    <input type="button" value="Amarillo" onClick="objeto.cambiarColor('#FFFF00')" />
+    <input type="button" value="Rosa" onClick="objeto.cambiarColor('#EE82EE')" />
+    <input type="submit" value="Limpiar" />
+  </form>
+  <section>
+    <h2>Escriba el código hexadecimal de un color y pulse enter</h2>
+    <label for="campo">Expecífico</label>
+    <input type="text" value="" onchange="objeto.cambiarColor()" id="campo" />
+  </section>
+  <main>
+    <canvas width="1920" height="1080"></canvas>
+  </main>
+
+
+</body>
+
+</html>

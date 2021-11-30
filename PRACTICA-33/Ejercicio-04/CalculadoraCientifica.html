@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sergio Castillo García" />
+    <meta name="description"
+        content="Página web creada para la práctica de JS de la asignatura Software y Estándares para la Web" />
+    <meta name="keywords" content="sergio castillo">
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+    <script src="CalculadoraCientifica.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora Científica</h1>
+    <label for="pantalla">Por Sergio Castillo </label>
+    <form>
+
+        <input type="text" value="" disabled id="pantalla" />
+
+
+        <input type="button" value="DEG" onClick="calculadora.deg()" />
+        <input type="button" value="F-E" onClick="calculadora.fe()" />
+        <input type="button" value="sin" onClick="calculadora.sin()" />
+        <input type="button" value="cos" onClick="calculadora.cos()" />
+        <input type="button" value="tan" onClick="calculadora.tan()" />
+
+
+        <input type="button" value="MC" onClick="calculadora.mc()" />
+        <input type="button" value="MR" onClick="calculadora.mr()" />
+        <input type="button" value="M+" onClick="calculadora.mMas()" />
+        <input type="button" value="M-" onClick="calculadora.mMenos()" />
+        <input type="button" value="MS" onClick="calculadora.ms()" />
+
+
+        <input type="button" value="2nd" onClick="calculadora.secondTrigo()" />
+        <input type="button" value="π" onClick="calculadora.pi()" />
+        <input type="button" value="e" onClick="calculadora.e()" />
+        <input type="submit" value="C" onClick="calculadora.borrarCientifica()" />
+        <input type="button" value="⌂" onClick="calculadora.borrarUnaCientifica()" />
+
+
+        <input type="button" value="x²" onClick="calculadora.x2()" />
+        <input type="button" value="1/x" onClick="calculadora.inversa()" />
+        <input type="button" value="|x|" onClick="calculadora.abs()" />
+        <input type="button" value="exp" onClick="calculadora.exp()" />
+        <input type="button" value="mod" onClick="calculadora.mod()" />
+
+
+        <input type="button" value="✓" onClick="calculadora.raiz()" />
+        <input type="button" value="(" onClick="calculadora.parentesisIzquierdo()" />
+        <input type="button" value=")" onClick="calculadora.parentesisDerecho()" disabled/>
+        <input type="button" value="n!" onClick="calculadora.factorial()" />
+        <input type="button" value="÷" onClick="calculadora.division()" />
+
+
+        <input type="button" value="xⁿ" onClick="calculadora.xy()" />
+        <input type="button" value="7" onClick="calculadora.digitos(7)" />
+        <input type="button" value="8" onClick="calculadora.digitos(8)" />
+        <input type="button" value="9" onClick="calculadora.digitos(9)" />
+        <input type="button" value="x" onClick="calculadora.multiplicacion()" />
+
+
+        <input type="button" value="10ⁿ" onClick="calculadora.diezExp()" />
+        <input type="button" value="4" onClick="calculadora.digitos(4)" />
+        <input type="button" value="5" onClick="calculadora.digitos(5)" />
+        <input type="button" value="6" onClick="calculadora.digitos(6)" />
+        <input type="button" value="-" onClick="calculadora.resta()" />
+
+
+        <input type="button" value="log" onClick="calculadora.log()" />
+        <input type="button" value="1" onClick="calculadora.digitos(1)" />
+        <input type="button" value="2" onClick="calculadora.digitos(2)" />
+        <input type="button" value="3" onClick="calculadora.digitos(3)" />
+        <input type="button" value="+" onClick="calculadora.suma()" />
+
+
+        <input type="button" value="ln" onClick="calculadora.ln()" />
+        <input type="button" value="±" onClick="calculadora.cambioSigno()" />
+        <input type="button" value="0" onClick="calculadora.digitos(0)" />
+        <input type="button" value="," onClick="calculadora.punto()" />
+        <input type="button" value="=" onClick="calculadora.igual()" />
+
+    </form>
+</body>
+
+</html>
