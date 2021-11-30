@@ -16,44 +16,90 @@
 </head>
 
 <body>
-    <h1>Etiqueta padre : &lt;BODY&gt; elemento : &lt;H1&gt; valor: 
+    <h1>
         Esto es el encabezado h1
     </h1>
-    <button onclick="objeto.ocultar()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Ocultar H1</button>
-    <button onclick="objeto.mostrar()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Mostrar H1</button>
-    <h2>Etiqueta padre : &lt;BODY&gt; elemento : &lt;H2&gt; valor: 
+    <button onclick="objeto.ocultar()">Ocultar H1</button>
+    <button onclick="objeto.mostrar()">Mostrar H1</button>
+    <h2>
         Esto es el encabezado h2
     </h2>
-    <button onclick="objeto.cambiarH2()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Cambiar h2</button>
-    <button onclick="objeto.originalH2()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: h2 original</button>
-    <h3>Etiqueta padre : &lt;BODY&gt; elemento : &lt;H3&gt; valor: 
+    <button onclick="objeto.cambiarH2()">Cambiar h2</button>
+    <button onclick="objeto.originalH2()">h2 original</button>
+    <h3>
         Esto es el encabezado h3
     </h3>
-    <p>Etiqueta padre : &lt;BODY&gt; elemento : &lt;P&gt; valor: Esto es un párrafo</p>
-    <button onclick="objeto.addP()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Añadir un párrafo</button>
-    <button onclick="objeto.doblarP()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Doblar los párrafo</button>
+    <p>Ha añadido un nuevo párrafo</p>
+    <p>Esto es un párrafo</p>
+    <button onclick="objeto.addP()">Añadir un párrafo</button>
+    <button onclick="objeto.doblarP()">Doblar los párrafo</button>
 
-    <button onclick="objeto.removeP()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Eliminar un párrafo</button>
-    <button onclick="objeto.removeAllP()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Eliminar todos los párrafo</button>
+    <button onclick="objeto.removeP()">Eliminar un párrafo</button>
+    <button onclick="objeto.removeAllP()">Eliminar todos los párrafo</button>
 
-    <button onclick="objeto.mostrarArbol('body')">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Mostrar arbol de los elementos</button>
 
     <table>
-        <tbody><tr>
-            <th>F1</th>    
-            <th>F2</th>    
-        </tr> 
-        <tr>
-            <td>0</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-    </tbody></table>
-    <button onclick="objeto.sumarFilas()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Sumar filas</button>
-    <button onclick="objeto.sumarColumnas()">Etiqueta padre : &lt;BODY&gt; elemento : &lt;BUTTON&gt; valor: Sumar columnas</button>
+        <tbody>
+            <tr>
+                <th>F1</th>
+                <th>F2</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="objeto.sumarFilas()">Sumar filas</button>
+    <button onclick="objeto.sumarColumnas()">Sumar columnas</button>
+
+
+    <button onclick="objeto.mostrarArbol('body')">Mostrar arbol de los elementos</button>
+    <h4>Arbol de los elementos</h4>
+    <p>Etiqueta padre : BODY elemento : H4 </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TH </p>
+    <p>Etiqueta padre : TR elemento : TH </p>
+    <p>Etiqueta padre : TBODY elemento : TR </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TH </p>
+    <p>Etiqueta padre : TR elemento : TH </p>
+    <p>Etiqueta padre : TBODY elemento : TR </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TD </p>
+    <p>Etiqueta padre : TR elemento : TH </p>
+    <p>Etiqueta padre : TR elemento : TH </p>
+    <p>Etiqueta padre : TBODY elemento : TR </p>
+    <p>Etiqueta padre : TABLE elemento : TBODY </p>
+    <p>Etiqueta padre : BODY elemento : TABLE </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : P </p>
+    <p>Etiqueta padre : BODY elemento : P </p>
+    <p>Etiqueta padre : BODY elemento : H3 </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : H2 </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : BUTTON </p>
+    <p>Etiqueta padre : BODY elemento : H1 </p>
 
 
 </body>
