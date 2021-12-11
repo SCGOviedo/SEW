@@ -63,7 +63,7 @@ main{
   /*Especificidad: 001*/
   form{  
     height:auto;
-    width: 90%;
+    max-width: 90%;
    }
 
 
