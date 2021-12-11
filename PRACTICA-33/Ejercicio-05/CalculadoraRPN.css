@@ -8,10 +8,11 @@
  form{  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   background-color: rgb(48, 48, 48);
   color:black;
   width: 30%;
+  height: auto;
  }
  /*Especificidad: 001*/
  textarea{
