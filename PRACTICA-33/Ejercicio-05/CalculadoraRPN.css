@@ -65,6 +65,10 @@ main{
     height:auto;
     max-width: 90%;
    }
-
+   /*Especificidad: 001*/
+   form input{
+    font-size: 200%;
+    
+  }
 
 }
