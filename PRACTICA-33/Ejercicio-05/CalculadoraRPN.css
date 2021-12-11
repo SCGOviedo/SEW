@@ -59,3 +59,12 @@ main{
 
   grid-template-rows: repeat(3, 20%);
 }
+@media only screen and (max-width: 600px) {
+  /*Especificidad: 001*/
+  form{  
+    height:auto;
+    max-width: 90%;
+   }
+
+
+}
