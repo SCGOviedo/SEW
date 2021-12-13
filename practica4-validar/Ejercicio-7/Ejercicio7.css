@@ -1,0 +1,87 @@
+ /*Especificidad: 001*/
+ body  {
+    font-family: Tahoma, sans-serif;
+    background-color: rgb(24, 24, 24);
+    color:rgb(255, 255, 255);
+ }
+ /*Especificidad: 001*/
+ h1 {
+    color: rgb(255, 255, 255);    
+    background-color:rgb(0, 0, 0);
+    font-size: 200%;
+    }
+ h2 {
+    color: rgb(255, 255, 255);    
+    background-color:rgb(0, 0, 0);
+    font-size: 150%;
+    }
+    
+ h3 {
+    color: rgb(255, 255, 255);    
+    font-size: 150%;
+    background-color:rgb(34, 34, 34);
+    }
+    
+
+/*Especificidad: 001*/
+main{
+    background-color: rgb(24, 24, 24);
+    color:rgb(255, 255, 255);
+}
+
+/*Especificidad: 001*/
+input {
+    background-color: rgb(255, 255, 255);
+    color:#000000;
+    width: 20em;
+    height: 2em;
+    font-size: 150%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+/*Especificidad: 011s*/
+  input[type=text] {
+    background-color: rgb(211, 211, 211);
+    color:#000000;
+    font-size: 100%;
+}
+  /*Especificidad: 001*/
+  p {
+    color: rgb(255, 255, 255);    
+    background-color:rgb(24, 24, 24);
+    font-size: 100%;
+    margin-left: 1%;
+    }
+
+/*Especificidad: 001*/
+ul {
+    color: rgb(255, 255, 255);    
+    background-color:rgb(24, 24, 24);
+    font-size: 110%;
+    }
+/*Especificidad: 001*/
+table{
+    border-spacing: 10px;
+    }
+/*Especificidad: 002*/
+table tr{
+    font-size: 150%;
+    }
+/*Especificidad: 002*/
+table th{
+    font-size: 180%;
+    }
+/*Especificidad: 012*/
+tr:nth-child(even) {
+    color: rgb(255, 255, 255);    
+
+        background-color: rgb(24, 24, 24);
+    
+        }
+/*Especificidad: 012*/
+tr:nth-child(odd) {
+    color: rgb(255, 255, 255);    
+        background-color:rgb(0, 0, 0);
+    
+}

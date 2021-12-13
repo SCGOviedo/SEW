@@ -1,0 +1,53 @@
+ /*Especificidad: 001*/
+ body  {
+    font-family: Tahoma, sans-serif;
+    background-color: rgb(189, 189, 189);
+    color:black;
+   }
+    /*Especificidad: 001*/
+   form{  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    background-color: rgb(48, 48, 48);
+    color:black;
+    width: 30%;
+   }
+   /*Especificidad: 001*/
+   textarea{
+    resize: none;
+    color: rgb(44, 44, 44);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: 300%;
+  }
+  /*Especificidad: 011*/
+  textarea:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+    /*Especificidad: 002*/
+    form input{
+      color:white;
+      background-color: rgb(44, 44, 44);
+      font-size: 300%;
+      
+    }
+    /*Especificidad: 001*/
+    h1 {
+      color: #fff;    
+      background-color:rgb(0, 0, 0); 
+      font-size: 150%;
+   } /*Especificidad: 001*/
+   label{
+    color: #fff;    
+    background-color: rgb(44, 44, 44);
+  
+   } /*Especificidad: 012*/
+   form input:disabled{
+    color:rgb(151, 151, 151);
+    background-color: rgb(44, 44, 44);
+    
+  }
