@@ -9,9 +9,12 @@ var Engine = Matter.Engine,
 var engine = Engine.create();
 
 // create a renderer
+// Game distribution
+const gameSize = { w: window.innerWidth, h: window.innerHeight }
 var render = Render.create({
     element: document.body,
-    engine: engine
+    engine: engine,   
+    options: { width: gameSize.w, height: gameSize.h }
 });
 
 // create two boxes and a ground
